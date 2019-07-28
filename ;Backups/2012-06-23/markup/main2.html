@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Space Reign</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.8.17.custom.css" />
+    <script type="text/javascript" src="../javascript/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../javascript/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="../javascript/Three.js"></script>
+    <script type="text/javascript" src="../javascript/cmnMisc.js"></script>
+    <script type="text/javascript" src="../javascript/cmnSpatial.js"></script>
+</head>
+<body>
+    <div id="star-chart" />
+    <script type="text/javascript">
+        function a() {
+            var viewpos, viewposHalf, v2,
+                imgDir, imageNames,
+                solarShader, particle,
+                camera, // = new THREE.PerspectiveCamera(75, 1, 1, 3000),
+                scene, // = new THREE.Scene(),
+                renderer, // = new THREE.WebGLRenderer(),
+                starChartDiv,
+                winWidth = $(window).width(),
+                winHeight = $(window).height(),
+                viewAngle, aspect, near, far;
+
+            scene = new THREE.Scene();
+
+            viewAngle = 75;
+            aspect = winWidth / winHeight;
+            near = 1;
+            far = 3000;
+
+            //scene.remove(camera);
+            camera = new THREE.PerspectiveCamera(viewAngle, aspect, near, far);
+            camera.position.z = 1000;
+            scene.add(camera);
+
+            solarShader = function (context) {
+                context.beginPath();
+                context.arc(0, 0, 1, 0, Math.PI2, true);
+                context.closePath();
+                context.fill();
+            };
+
+            particle = new THREE.Particle(
+            new THREE.ParticleCanvasMaterial({
+                color: Math.random() * 0x808008 + 0x808080,
+                solarShader: solarShader
+            }));
+            particle.position.x = 0;
+            particle.position.y = 0;
+            particle.position.z = 0;
+            particle.scale.x = particle.scale.y = 500;
+            particle.name = "my sol";
+            scene.add(particle);
+
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(winWidth, winHeight);
+            starChartDiv = $('#star-chart').get(0);
+            starChartDiv.appendChild(renderer.domElement);
+
+            function ticker() {
+                requestAnimationFrame(ticker);
+
+                camera.lookAt(scene.position);
+                renderer.render(scene, camera);
+            }
+
+            ticker();
+        }
+
+        function b() {
+            //if (!Detector.webgl) Detector.addGetWebGLMessage();
+            var container, stats;
+            var camera, controls, scene, renderer;
+
+            init();
+            animate();
+
+            function init() {
+                // scene and camera
+                scene = new THREE.Scene();
+                scene.fog = new THREE.FogExp2(0xffffff, 0.002);
+
+                camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
+                camera.position.z = 500;
+
+                scene.add(camera);
+
+                controls = new THREE.TrackballControls(camera);
+
+                controls.rotateSpeed = 1.0;
+                controls.zoomSpeed = 1.2;
+                controls.panSpeed = 0.8;
+
+                controls.noZoom = false;
+                controls.noPan = false;
+
+                controls.staticMoving = true;
+                controls.dynamicDampingFactor = 0.3;
+
+                controls.keys = [65, 83, 68];
+
+                var solarShader = function (context) {
+                    context.beginPath();
+                    context.arc(0, 0, 1, 0, Math.PI2, true);
+                    context.closePath();
+                    context.fill();
+                };
+
+//                var mat = new THREE.ParticleCanvasMaterial({
+//                    color: Math.random() * 0x808008 + 0x808080,
+//                    program: solarShader
+//                });
+
+//                var mat = new THREE.ParticleBasicMaterial({
+//                    color: 0xFFFFFF,
+//                    size: 20
+//                });
+
+//                var particle = new THREE.Particle(mat);
+//                particle.position.x = 0;
+//                particle.position.y = 0;
+//                particle.position.z = 0;
+//                particle.scale.x = particle.scale.y = 5;
+//                particle.name = "my sol";
+//                scene.add(particle);
+
+                geometry = new THREE.Geometry();
+                sprite = THREE.ImageUtils.loadTexture("../images/spark1.png");
+
+                for (i = 0; i < 10000; i++) {
+                    x = 2000 * Math.random() - 1000;
+                    y = 2000 * Math.random() - 1000;
+                    z = 2000 * Math.random() - 1000;
+
+                    vector = new THREE.Vector3(x, y, z);
+                    geometry.vertices.push(new THREE.Vertex(vector));
+                }
+
+                material = new THREE.ParticleBasicMaterial({ size: 35, sizeAttenuation: false, map: sprite });
+                material.color.setHSV(1.0, 0.2, 0.8);
+
+                particles = new THREE.ParticleSystem(geometry, material);
+                particles.sortParticles = true;
+                scene.add(particles);
+                
+//                geometry = new THREE.Geometry();
+//                sprite = THREE.ImageUtils.loadTexture("../images/spark1.png");
+
+//                for (i = 0; i < 10000; i++) {
+//                    x = 2000 * Math.random() - 1000;
+//                    y = 2000 * Math.random() - 1000;
+//                    z = 2000 * Math.random() - 1000;
+
+//                    vector = new THREE.Vector3(x, y, z);
+//                    geometry.vertices.push(new THREE.Vertex(vector));
+//                }
+
+//                material = new THREE.ParticleBasicMaterial({ size: 35, sizeAttenuation: false, map: sprite });
+//                material.color.setHSV(1.0, 0.2, 0.8);
+
+//                particles = new THREE.ParticleSystem(geometry, material);
+//                particles.sortParticles = true;
+//                scene.add(particles);
+                
+
+
+                // world
+                var cube = new THREE.CubeGeometry(20, 60, 20);
+                cube.vertices[0].position.multiplyScalar(0.01);
+                cube.vertices[1].position.multiplyScalar(0.01);
+                cube.vertices[4].position.multiplyScalar(0.01);
+                cube.vertices[5].position.multiplyScalar(0.01);
+
+                var material = new THREE.MeshLambertMaterial({ color: 0xffffff });
+
+                for (var i = 0; i < 500; i++) {
+                    var mesh = new THREE.Mesh(cube, material);
+                    mesh.position.set((Math.random() - 0.5) * 1000,
+									  (Math.random() - 0.5) * 1000,
+									  (Math.random() - 0.5) * 1000);
+
+                    mesh.updateMatrix();
+                    mesh.matrixAutoUpdate = false;
+                    scene.add(mesh);
+                }
+
+                // lights
+                light = new THREE.DirectionalLight(0xffffff);
+                light.position.set(1, 1, 1);
+                scene.add(light);
+
+                light = new THREE.DirectionalLight(0x002288);
+                light.position.set(-1, -1, -1);
+                scene.add(light);
+
+                light = new THREE.AmbientLight(0x222222);
+                scene.add(light);
+
+                // renderer
+                renderer = new THREE.WebGLRenderer({ antialias: false });
+                renderer.setClearColorHex(0xffffff, 1);
+                renderer.setSize(window.innerWidth, window.innerHeight);
+
+                container = document.getElementById('star-chart');
+                container.appendChild(renderer.domElement);
+            }
+
+            function animate() {
+                requestAnimationFrame(animate);
+                render();
+            }
+
+            function render() {
+                controls.update();
+                renderer.render(scene, camera);
+            }
+        }
+        b();
+    </script>
+</body>
+</html>

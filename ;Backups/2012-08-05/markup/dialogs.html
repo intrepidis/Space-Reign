@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Space Reign - dialogs</title>
+</head>
+<body>
+<div id="obj-chooser" class="obj-chooser" title="Please choose an item" style="width:400px;">
+	<ul id="choice-list">
+		<li listIndex="{0}">{1}</li>
+	</ul>
+</div>
+<div id="dest-chooser" title="Select destination" style="width:400px" position="left,top">
+	<p>Please choose a destination star by clicking on it.</p>
+	<p><span id="cancel-button">Cancel</span></p>
+</div>
+<div id="solar" title="Solar System">
+	<p>Name: <span id="sol-name"></span></p>
+	<p>Owner: <span id="sol-owner"></span></p>
+	<p>Coordinate: <span id="sol-coord"></span></p>
+	<p><span id="sol-inhabited"></span></p>
+	<p>Mass: <span id="sol-mass"></span></p>
+	<p><span id="sol-trade-items"></span></p>
+	<p><span id="vessels"></span></p>
+	<p><span id="construction-button">Construction</span></p>
+</div>
+<div id="construction" title="Construction Menu" style="width:500px;">
+	<p>Solar System: <span id="sol-name"></span></p>
+</div>
+<div id="vessel" title="Space Vessel" style="width: 500px;">
+	<p>Name: <span id="ship-name"></span></p>
+	<p>Class: <span id="ship-class"></span></p>
+	<p>Coordinate: <span id="ship-coord"></span></p>
+	<p>
+		Destination: <span id="ship-dest-name"></span> (<span id="ship-dest-coord"></span>)<br />
+		<span id="change-dest-button">Change Destination</span>
+	</p>
+	<p>
+		<span id="load-hold-button">Load Hold</span>
+	</p>
+</div>
+<div id="trade-goods" title="Trade Goods" style="width: 600px; height: 400px;">
+	<ul id="goods-list">
+		<li listIndex="{0}">{1} (Sol Hold: <span id="sol-quantity">{2}</span>) (Ship Hold: <span id="ship-quantity">{3}</span>) <span id="buy-button" class="buy-button">+</span><span id="sell-button" class="sell-button">-</span></li>
+	</ul>
+</div>
+</body>
+</html>

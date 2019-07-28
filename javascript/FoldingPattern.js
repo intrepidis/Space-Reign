@@ -62,8 +62,8 @@
 			}());
 			
 			// The properties below have access to the enclosed fields.
-			// Careful with functions exposed within the closure of the constructor,
-			// every new instance will have it's own copy.
+			// Careful with functions exposed within the closure of the
+			// constructor, each new instance will have it's own copy.
 			(function EXPOSED_PROPERTIES_WITHIN_CONSTRUCTOR() {
 				Object.defineProperty(X, 'myProperty1', {
 					get : function () {
@@ -195,8 +195,8 @@
 			}());
 			
 			// The properties below have access to the enclosed fields.
-			// Careful with functions exposed within the closure of the constructor,
-			// every new instance will have it's own copy.
+			// Careful with functions exposed within the closure of the
+			// constructor, each new instance will have it's own copy.
 			(function EXPOSED_PROPERTIES_WITHIN_CONSTRUCTOR() {
 				Object.defineProperty(X, 'toggle', {
 					get : function () {

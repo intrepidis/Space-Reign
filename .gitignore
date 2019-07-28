@@ -1,0 +1,7 @@
+*.suo
+*.user
+Thumbs.db
+bin
+obj
+Debug
+Release

@@ -1,0 +1,9 @@
+COMPLETED: Fix "missing sectors" bug.
+
+Use whiteCircle/whiteTriangle sprite for vessels.
+
+Player's home world is "Lahe Lopa".
+
+Do a final pass of the star map to make all sol names unique.
+
+Add concept of sol-owner/company

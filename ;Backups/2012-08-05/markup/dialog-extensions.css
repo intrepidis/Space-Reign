@@ -1,0 +1,7 @@
+.ui-dialog .ui-dialog-titlebar-pin{ position: absolute; right: 23px; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-pin span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-pin:hover, .ui-dialog .ui-dialog-titlebar-pin:focus { padding: 0; }
+
+.ui-dialog .ui-dialog-titlebar-unpin{ position: absolute; right: 23px; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-unpin span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-unpin:hover, .ui-dialog .ui-dialog-titlebar-unpin:focus { padding: 0; }

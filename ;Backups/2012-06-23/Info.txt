@@ -1,0 +1,40 @@
+
+Like Supremacy/Megalomania but read Elite letter again. Elements of Settlers, Risk, ADOM, Civ, Populous, Mushroom Wars, Infinite Space, skills trees (like in FF 12 and Skyrim). Keep it simple but repercussive. Title screen. Start screen, new game then (subconsciously) choose colour. Main is space map, can pan, zoom, search db, select solars, ships and gates. Icon toolbar which grows in groups.
+
+Solars have stats like num planets, population. These can be viewed on graphs which record the last 5 minutes. Solars produce resources, i.e. from planetary or asteroid mining. Atmosphere condition can be terraformed. Can add space stations to reduce docking queues. Later you can acquire intel on your enemies, such as their trade route map which can be overlaid on your star chart.
+
+If solars are grey they are uninhabited. Colours represent different organizations. White is always pirates. Once the player is strong enough they will be able to buy/ conquer/ terraform planets, which will then turn to the colour they unwittingly selected at the start. Initially their 1 ship is in an ally's solar with a complement of fuel and cash. A guide (tutorial) leads you through the first steps. You begin allied to everyone, although initially some organizations are at war with some others.
+
+Start as a single ship which you pilot by selecting solars. At which you can buy specific items. From the off you can set your ship to automatically pilot trade routes, with set merchandise. Later you may earn enough to buy another one. You can join them into fleets. A fleet max travel range is equal to its smallest craft, such as a fighter. Carriers can be set to a fleet which is capable of carrying and deploying a certain amount of smaller craft. Later you develop heighliners which can fold space. Before that jump gates are developed. Occasionally Heighliners may vanish due to error. Other disasters occur. You can do research, but the other organizations are also researching. Need a hierarchy of development, which should have overlapping branches.
+
+Tech trees, with next choices visible and meaningful paths (thinking Megalomania tech upgrades mixed with FFXII skills). Ship creation done by either merging 2 or 3 ships and applying a new technology (like Vagrant Story's weapons crafting, unlike Skyrim's direct approach), or selecting traits (such as size, cabins vs cargo) and available technologies.
+
+Ships are banded into size categories, which doesn't determine a ship's hold size, but obviously there will be some relation. Ship holds use the same categories. Ships can be treated as cargo. Heighliners cannot however transport merchandise.
+
+Transport ships can have trade routes, buy/sell/deliver food/weapons/metal. Larger ones can transport small ships over longer distances. Trading affects itself, meaning that if you buy X cheap from A and sell it profitably at B constantly then slowly X becomes cheaper at B and more expensive at A, unless the right balance it met. This could be coz B manufactures Y which requires X. The input of X to output of Y ratio could depend on the population size or num of space stations, etc...
+
+Security ships can have patrol routes, attack all/guild/pirate any/fighters/transports in set range. Defend xxx our/ally any/transports. Escort in fleet.
+
+War/fighter ships should have a Battle Index, which determines their strength.
+
+Alliances, including trade:
+You should be able to provide services to non-hostiles.
+
+"Levels" differ in star charts but also in starting scenarios. Such as number of competing orgs. Win conditions also vary.
+
+Progression:
+1> Allowed only 1 ship. Cannot acquire a solar. Will only be attacked by pirates, but allies may help. Can opt for auto trading. The first time something happens time pauses and a guide pops open. Can do exploration ming and mining ming.
+2> Can opt for auto-battles. At science level 10 can do auto-exploration, at 15 auto-mining.
+3> Can purchase more ships, requires crew drafted from space stations via interview ming. Can do research ming.
+4> Can acquire solars.
+
+Threat levels. This increases as solars install new defense platforms, due to obviously antisipating hostilities. Of course, there is also the increasing of transport defense, patrols, and aggressive action. There is no obvious info about how threatening your own organization looks, but this can be learnt from observing charts on the opposition's threat level.
+
+Mini-games (ming):
+Exploration	=	?
+Mining		=	Like tetris/ jenga/ puz quest galactrix.
+Research	=	?
+Interview	=	?
+Something	=	Like assigning crew in Infinite Space
+
+There needs to be a feeling of progression and goal. These should be tied together.

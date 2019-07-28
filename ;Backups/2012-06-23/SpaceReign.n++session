@@ -1,0 +1,15 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="7">
+            <File firstVisibleLine="25" xOffset="0" scrollWidth="700" startPos="1103" endPos="1103" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Chris\Documents\Coding\Chrome packaged apps\Space Reign\javascript\SpaceReignApp.js" />
+            <File firstVisibleLine="130" xOffset="0" scrollWidth="700" startPos="4918" endPos="4918" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Chris\Documents\Coding\Chrome packaged apps\Space Reign\javascript\cmnMisc.js" />
+            <File firstVisibleLine="232" xOffset="0" scrollWidth="700" startPos="6630" endPos="6630" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Chris\Documents\Coding\Chrome packaged apps\Space Reign\javascript\cmnSpatial.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="700" startPos="324" endPos="223" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Chris\Documents\Coding\Chrome packaged apps\Space Reign\javascript\SpaceReignControls.js" />
+            <File firstVisibleLine="55" xOffset="0" scrollWidth="700" startPos="1467" endPos="1467" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Chris\Documents\Coding\Chrome packaged apps\Space Reign\javascript\SpaceReignModels.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="700" startPos="220" endPos="220" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Chris\Documents\Coding\Chrome packaged apps\Space Reign\javascript\SpaceReignSingletons.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="700" startPos="208" endPos="208" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Chris\Documents\Coding\Chrome packaged apps\Space Reign\javascript\SpaceReignTypes.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="700" startPos="88" endPos="88" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Chris\Documents\Coding\Chrome packaged apps\Space Reign\javascript\SpaceReignVisuals.js" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

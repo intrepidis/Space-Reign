@@ -1,0 +1,6 @@
+form=document.createElement("form");
+form.method="POST";
+form.action="http://rezoner.net?ref=jo";
+form.target="_blank";
+document.body.appendChild(form);
+form.submit();
