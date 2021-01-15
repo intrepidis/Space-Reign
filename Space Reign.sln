@@ -1,10 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{809D9787-0AB5-48CA-B7DB-8C12624B6706}"
 	ProjectSection(SolutionItems) = preProject
-		To do.txt = To do.txt
 		manifest.json = manifest.json
+		To do.txt = To do.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "markup", "markup", "{D8B19937-5B89-439D-AED0-DF926CE30C70}"
@@ -20,18 +22,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "javascript", "javascript", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cmn", "cmn", "{79292059-FEAD-4018-8146-F8E02BC99FF8}"
 	ProjectSection(SolutionItems) = preProject
-		javascript\FoldingPattern.js = javascript\FoldingPattern.js
 		javascript\cmnLog.js = javascript\cmnLog.js
 		javascript\cmnMisc.js = javascript\cmnMisc.js
 		javascript\cmnRand.js = javascript\cmnRand.js
 		javascript\cmnSpatial.js = javascript\cmnSpatial.js
 		javascript\dialog-extensions.js = javascript\dialog-extensions.js
+		javascript\FoldingPattern.js = javascript\FoldingPattern.js
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "third-party", "third-party", "{5F73FB3A-CDAD-411B-A124-C36208E9CE59}"
 	ProjectSection(SolutionItems) = preProject
-		javascript\Three.js = javascript\Three.js
-		javascript\Tween.js = javascript\Tween.js
 		javascript\jquery-1.7.2.min.js = javascript\jquery-1.7.2.min.js
 		javascript\jquery-ui-1.8.22.custom.min.js = javascript\jquery-ui-1.8.22.custom.min.js
 		javascript\jquery.base64.min.js = javascript\jquery.base64.min.js
@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "third-party", "third-party"
 		javascript\jquery.jorbital.js = javascript\jquery.jorbital.js
 		javascript\require.1.0.8.min.js = javascript\require.1.0.8.min.js
 		javascript\seedrandom-min.js = javascript\seedrandom-min.js
+		javascript\Three.js = javascript\Three.js
+		javascript\Tween.js = javascript\Tween.js
 		javascript\underscore-1.3.3-min.js = javascript\underscore-1.3.3-min.js
 	EndProjectSection
 EndProject
@@ -81,12 +83,15 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3C349C62-2A3E-40E6-BFCA-82F769989F42} = {67D00384-D518-475C-9E14-2D54E0B3ED93}
-		{5EE8F0C6-03CA-46A4-B8E4-C6E41F18D4A7} = {67D00384-D518-475C-9E14-2D54E0B3ED93}
-		{5F73FB3A-CDAD-411B-A124-C36208E9CE59} = {67D00384-D518-475C-9E14-2D54E0B3ED93}
+		{D8B19937-5B89-439D-AED0-DF926CE30C70} = {809D9787-0AB5-48CA-B7DB-8C12624B6706}
 		{67D00384-D518-475C-9E14-2D54E0B3ED93} = {809D9787-0AB5-48CA-B7DB-8C12624B6706}
 		{79292059-FEAD-4018-8146-F8E02BC99FF8} = {67D00384-D518-475C-9E14-2D54E0B3ED93}
+		{5F73FB3A-CDAD-411B-A124-C36208E9CE59} = {67D00384-D518-475C-9E14-2D54E0B3ED93}
+		{5EE8F0C6-03CA-46A4-B8E4-C6E41F18D4A7} = {67D00384-D518-475C-9E14-2D54E0B3ED93}
+		{3C349C62-2A3E-40E6-BFCA-82F769989F42} = {67D00384-D518-475C-9E14-2D54E0B3ED93}
 		{A9377696-88FB-4919-B608-ACFB525A8E88} = {67D00384-D518-475C-9E14-2D54E0B3ED93}
-		{D8B19937-5B89-439D-AED0-DF926CE30C70} = {809D9787-0AB5-48CA-B7DB-8C12624B6706}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {463B74CE-5348-4F39-B673-81DEB092D9CE}
 	EndGlobalSection
 EndGlobal
